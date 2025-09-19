@@ -1,0 +1,40 @@
+# Use the following to check wheter any of the files here are still being tracked:
+# > git ls-files --ignored --cached --exclude-standard
+
+# To clean all of them, pipe them to git rm with xargs:
+# > git ls-files --ignored --cached --exclude-standard | xargs git rm --cached
+
+.vscode/
+
+# ignore all pycache and pytest_cache dirs at all depths (note the slash to  the right)
+**__pycache__/
+.pytest_cache/
+
+# Mac OS
+**.DS_Store
+
+# temp
+**temp/
+
+# build artifacts
+src/grc_macronizer.egg-info
+
+# behind-the-scenes stuff
+scripts/dev
+scripts/test*
+scripts/*log*
+scripts/norma_output.tsv
+notebooks/sandbox.ipynb
+src/grc_macronizer/test*.py
+
+# diagnostics
+diagnostics/**/*
+
+# odycy docs (keeping the anabasis doc so users can use the benchmark faster)
+odycy_docs/
+!odycy_docs/Δαρείου-καὶ-914bda29da71bd7b.spacy
+
+# unused db
+src/grc_macronizer/db/hypotactic.py
+src/grc_macronizer/db/wiktionary_old.py
+src/grc_macronizer/db/wiktionary_example.py
