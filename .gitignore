@@ -30,11 +30,9 @@ src/grc_macronizer/test*.py
 # diagnostics
 diagnostics/**/*
 
-# odycy docs (keeping the anabasis doc so users can use the benchmark faster)
-odycy_docs/
-!odycy_docs/Δαρείου-καὶ-914bda29da71bd7b.spacy
-
 # unused db
 src/grc_macronizer/db/hypotactic.py
 src/grc_macronizer/db/wiktionary_old.py
 src/grc_macronizer/db/wiktionary_example.py
+
+conllu_proiel/
